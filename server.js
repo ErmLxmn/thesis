@@ -4,14 +4,9 @@ const app = express()
 
 //using public folder
 app.use(express.static(__dirname + '/public'))
-//setting view engine
-// app.set('view-engine', 'ejs')
-// app.set('views', 'public/views')
 
 app.get('/', function (req, res) {
-  res.json({
-    Hello: 'World',
-  })
+  res.sendFile('/views/index.html')
 })
 
 //defining port
