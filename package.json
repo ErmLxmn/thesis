@@ -7,8 +7,8 @@
     "node": "16.x"
   },
   "scripts": {
-    "test": "nodemon main",
-    "start": "node main"
+    "test": "nodemon server",
+    "start": "node server"
   },
   "keywords": [],
   "author": "",
