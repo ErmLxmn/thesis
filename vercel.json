@@ -5,8 +5,8 @@
       "use": "@vercel/node"
     },
     {
-      "src": "./client/client.js",
-      "use": "@vercel/node"
+      "src": "./client/public",
+      "use": "@vercel/static"
     }
   ],
   "rewrites": [

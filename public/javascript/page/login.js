@@ -3,10 +3,9 @@ $(document).ready(function () {
 
   $('#login').on('click', function () {
     $.ajax({
-      url: 'http://localhost:3000/api/get',
+      url: '/api/student/get',
       success: function (result) {
-        $('#form3Example3').val(result.data)
-        console.log(result)
+        $('#form3Example3').val(result.name)
       },
     })
   })
