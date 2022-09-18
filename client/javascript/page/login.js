@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   $('#login').on('click', function () {
     $.ajax({
-      url: '/api/get',
+      url: 'http://localhost:3000/api/get',
       success: function (result) {
         $('#form3Example3').val(result.data)
         console.log(result)
