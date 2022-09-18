@@ -3,10 +3,10 @@ $(document).ready(function () {
 
   $('#login').on('click', function () {
     $.ajax({
-      url: 'https://thesis-ten.vercel.app//api/get',
-      type: 'GET',
-      callback: function (result) {
-        $('#form3Example3').val(result)
+      url: '/api/get',
+      success: function (result) {
+        $('#form3Example3').val(result.data)
+        console.log(result)
       },
     })
   })

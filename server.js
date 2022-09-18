@@ -2,11 +2,13 @@ const express = require('express')
 const path = require('path')
 const app = express()
 const cors = require('cors')
+
 app.use(
   cors({
     origin: ['http://localhost:3000/', 'https://thesis-ten.vercel.app/'],
   })
 )
+
 //using public folder
 app.use(express.static(__dirname + '/public'))
 
