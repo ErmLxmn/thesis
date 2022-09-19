@@ -11,6 +11,8 @@ app.use(cors())
 //static files like views, css, javascript
 app.use(express.static(__dirname + '/public/'))
 
+app.use(express.static(__dirname + '/node_modules/'))
+
 //view routes
 app.use(index)
 app.use(login)
